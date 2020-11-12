@@ -117,8 +117,16 @@
               "devServerTarget": "PortfolioApp:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "PortfolioApp"
+    }
+  },
+  "defaultProject": "PortfolioApp",
+  "cli": {
+    "analytics": false
+  }
 }
