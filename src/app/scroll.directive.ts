@@ -1,9 +1,9 @@
-import { Directive, HostListener, Input, ElementRef, Renderer2 } from "@angular/core";
+import { Directive, HostListener, Input, ElementRef, Renderer2, OnDestroy } from "@angular/core";
 
 @Directive({
     selector:"[animateOnScroll]"
 })
-export class ScrollDirective{
+export class ScrollDirective implements OnDestroy{
 
     @Input() animationName:string;
     @Input() offset:number=0;
